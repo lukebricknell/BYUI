@@ -88,6 +88,10 @@ p {
   align-items: center;
 }
 
+.justify--space-between {
+  justify-content: space-between;
+}
+
 .justify-start {
   justify-content: flex-start;
 }
@@ -175,3 +179,4 @@ header a:first-child {
 .mountain-msg {
   gap: 2rem;
 }
+
