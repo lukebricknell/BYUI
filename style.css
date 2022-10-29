@@ -72,6 +72,14 @@ p {
   margin-bottom: 4.2rem;
 }
 
+.margin-top-small {
+  margin-top: 4.2rem;
+}
+
+.margin-top-large {
+  margin-top: 8rem;
+}
+
 .margin-bottom-large {
   margin-bottom: 8rem;
 }
@@ -118,6 +126,16 @@ p {
 
 .content-right {
   margin: 0 0 0 auto;
+}
+
+.grid-3-cols {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.justify-items {
+  justify-items: center;
 }
 
 /* Header */
@@ -168,7 +186,6 @@ header a:first-child {
 .rivers-card {
   width: 40%;
   align-items: center;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -179,4 +196,3 @@ header a:first-child {
 .mountain-msg {
   gap: 2rem;
 }
-
