@@ -1,0 +1,198 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* General CSS */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "Rubik", sans-serif;
+}
+
+h2 {
+  margin-bottom: 4.8rem;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+h1 {
+  font-size: 6.4rem;
+  margin-bottom: 3.4rem;
+}
+
+h2 {
+  font-size: 5.6rem;
+}
+
+h4 {
+  font-size: 3.6rem;
+  margin-bottom: 2.6rem;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 2.2rem;
+  color: #555;
+}
+
+.button-primary.button {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  background-color: #459309;
+  color: #fff;
+  border: 0;
+  border-radius: 100px;
+}
+
+/* Helper Classes */
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.nav-hero--container {
+  height: 100vh;
+}
+
+.margin-bottom-small {
+  margin-bottom: 4.2rem;
+}
+
+.margin-top-small {
+  margin-top: 4.2rem;
+}
+
+.margin-top-large {
+  margin-top: 8rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify--space-between {
+  justify-content: space-between;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.width-half {
+  width: 50%;
+}
+
+.width-40 {
+  width: 40%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.content-right {
+  margin: 0 0 0 auto;
+}
+
+.grid-3-cols {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+.justify-items {
+  justify-items: center;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+
+header a {
+  padding-left: 2.4rem;
+}
+
+header a:first-child {
+  padding-left: 0;
+}
+
+.button.nav-cta {
+  display: inline-block;
+  border: 0;
+  padding: 1rem 2rem;
+  background-color: #459309;
+  color: #fff;
+  border-radius: 100px;
+  margin-left: 1.5rem;
+}
+
+/* Hero */
+
+.nav-hero--container {
+  background-color: #f4f4f4;
+}
+
+#hero-msg {
+  gap: 2rem;
+  margin-top: 14rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+/* Other Sections */
+
+.rivers-card {
+  width: 40%;
+  align-items: center;
+  text-align: center;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.mountain-msg {
+  gap: 2rem;
+}
