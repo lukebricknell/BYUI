@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Home | Lumaza Marketing</title>
+  </head>
+  <body>
+    <div class="bg-black h-screen">
+      <header class="py-4 bg-black" x-data="{expanded: false}">
+        <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="flex items-center justify-between">
+            <div class="flex-shrink-0">
+              <a href="#" title="" class="flex">
+                <img
+                  class="w-auto h-20"
+                  src="images/LM Logo Dark.svg"
+                  alt="Lumaza Marketing Logo"
+                />
+              </a>
+            </div>
+
+            <div class="flex lg:hidden">
+              <button
+                type="button"
+                class="text-lred"
+                @click="expanded = !expanded"
+                :aria-expanded="expanded"
+              >
+                <span x-show="!expanded" aria-hidden="true">
+                  <svg
+                    class="w-7 h-7"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </span>
+
+                <span x-show="expanded" aria-hidden="true">
+                  <svg
+                    class="w-7 h-7"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <nav
+              class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-16"
+            >
+              <a
+                href="#"
+                title=""
+                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+              >
+                services
+              </a>
+
+              <a
+                href="#"
+                title=""
+                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+              >
+                portfolio
+              </a>
+
+              <a
+                href="#"
+                title=""
+                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+              >
+                our story
+              </a>
+            </nav>
+
+            <nav class="hidden lg:flex">
+              <a
+                href="#"
+                title=""
+                class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                start now
+              </a>
+            </nav>
+          </div>
+
+          <nav x-show="expanded" x-collapse class="hidden">
+            <div class="px-1 py-8">
+              <div class="grid gap-y-7">
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  services
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  portfolio
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+                >
+                  our story
+                </a>
+
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-beige focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button"
+                >
+                  start now
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+
+      <section
+        class="container px-4 py-20 mx-auto sm:px-6 lg:px-8 lg:py-48 xl:py-64 h-full"
+      >
+        <div class="">
+          <h1
+            class="text-lred text-5xl md:text-6xl lg:text-7xl font-extrabold text-center"
+          >
+            be bold<span class="text-white">.</span><br />be different<span
+              class="text-white"
+              >.</span
+            ><br /><span class="text-white">be you</span>.
+          </h1>
+          <div class="pt-10 flex justify-center items-center gap-4">
+            <a
+              class="inline-block items-center justify-center px-10 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              href="#"
+              >start now</a
+            >
+            <a
+              class="inline-block items-center justify-center px-10 py-2 text-base font-bold leading-7 text-beige transition-all duration-200 ring-lred ring-2 border border-transparent rounded-xl hover:bg-beige hover:text-lred hover:ring-0 focus:ring-0 focus:bg-beige"
+              href="testimonial.html"
+              >our work</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- End of Nav/Hero Container -->
+    </div>
+
+    <!-- SECTION 2 -->
+
+    <section class="bg-beige">
+      <div
+        class="px-4 sm:px-6 md:px-8 max-w-5xl mx-auto py-20 md:flex md:justify-around md:gap-14"
+      >
+        <main class="">
+          <h2 class="text-5xl font-bold">
+            dream, create <br />
+            and smash <br />
+            <span class="text-lred">your goals</span>.
+          </h2>
+        </main>
+        <div class="pt-10 lg:pt-20">
+          <img
+            class="ml-auto"
+            src="images/Image of bro.png"
+            height="300px"
+            width="auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER SECTION -->
+
+    <section class="bg-lred py-10 md:py-16 lg:py-20">
+      <div class="container px-4 md:px-6 lg:px-8 mx-auto">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white"
+        >
+          there's no time like<span class="text-black"> now</span>.
+        </h2>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+
+    <section class="py-12 bg-black sm:py-16 lg:py-20">
+      <div class="px-4 mx-auto container sm:px-6 lg:px-8">
+        <div class="max-w-xl mx-auto">
+          <h2 class="text-3xl font-bold text-white sm:text-4xl xl:text-5xl">
+            our world revolves<br /><span class="text-lred">around you</span>.
+          </h2>
+        </div>
+
+        <div
+          class="grid items-center max-w-md grid-cols-1 mx-auto mt-8 md:max-w-5xl gap-y-6 md:mt-16 md:grid-cols-3"
+        >
+          <div class="bg-white">
+            <div class="p-6 lg:px-10 lg:py-9">
+              <div class="text-center">
+                <p class="text-4xl">🚀</p>
+                <h3 class="mt-6 text-sm font-bold tracking-widest uppercase">
+                  basic
+                </h3>
+                <p class="mt-1.5 text-sm text-gray-600">
+                  Best for small business owners
+                </p>
+              </div>
+
+              <ul class="space-y-3 text-base font-medium text-gray-900 mt-9">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Facebook Marketing
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Content Creation
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  24/7 support
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  1 Weekly Post
+                </li>
+              </ul>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center w-full px-4 py-3 text-base font-bold rounded-2xl text-beige transition-all duration-200 bg-lred border border-transparent lg:px-8 hover:bg-gray-900 hover:text-white focus:text-white focus:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                  role="button"
+                >
+                  start now
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-x-2 -inset-y-px">
+              <div
+                class="w-full h-full mx-auto rotate-180 opacity-30 blur-lg filter"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    #44ff9a -0.55%,
+                    #44b0ff 22.86%,
+                    #8b44ff 48.36%,
+                    #ff6644 73.33%,
+                    #ebff70 99.34%
+                  );
+                "
+              ></div>
+            </div>
+
+            <div class="relative bg-white shadow-xl">
+              <div class="py-2 text-center bg-lred">
+                <p
+                  class="text-xs font-bold tracking-widest text-white uppercase"
+                >
+                  Most Popular
+                </p>
+              </div>
+              <div class="p-6 lg:px-10 lg:py-9">
+                <div class="text-center">
+                  <p class="text-4xl">⚡️</p>
+                  <h3 class="mt-6 text-sm font-bold tracking-widest uppercase">
+                    Extreme Disruption
+                  </h3>
+                  <p class="mt-1.5 text-sm text-gray-600">
+                    Best for companies wanting extreme results.
+                  </p>
+                </div>
+
+                <ul class="space-y-3 text-base font-medium text-gray-900 mt-9">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2.5"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Monthly Ad Campaigns
+                  </li>
+
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2.5"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    FB, Insta and LinkedIn Ads
+                  </li>
+
+                  <li class="flex items-center">
+                    <svg
+                      class="w-5 h-5 mr-2.5"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Content Creation
+                  </li>
+
+                  <li class="flex items-center text-gray-400">
+                    <svg
+                      class="w-5 h-5 mr-2.5"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    Advanced Reporting
+                  </li>
+
+                  <li class="flex items-center text-gray-400">
+                    <svg
+                      class="w-5 h-5 mr-2.5"
+                      width="20px"
+                      height="20px"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                    5 posts a week
+                  </li>
+                </ul>
+
+                <div class="mt-12 text-center">
+                  <a
+                    href="#"
+                    title=""
+                    class="flex items-center justify-center w-full px-4 py-3 rounded-2xl text-base font-bold text-beige transition-all duration-200 bg-gray-900 border border-transparent lg:px-8 hover:bg-lred focus:bg-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lred"
+                    role="button"
+                  >
+                    start disrupting
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white">
+            <div class="p-6 lg:px-10 lg:py-9">
+              <div class="text-center">
+                <p class="text-4xl">👓</p>
+                <h3 class="mt-6 text-sm font-bold tracking-widest uppercase">
+                  growth plan
+                </h3>
+                <p class="mt-1.5 text-sm text-gray-600">
+                  Best for steady growth
+                </p>
+              </div>
+
+              <ul class="space-y-3 text-base font-medium text-gray-900 mt-9">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  1 monthly ad campaign
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  FB and Instagram Ads
+                </li>
+
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  Limited Reporting
+                </li>
+
+                <li class="flex items-center text-gray-400">
+                  <svg
+                    class="w-5 h-5 mr-2.5"
+                    width="20px"
+                    height="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  3 Weekly Social Media Posts
+                </li>
+              </ul>
+
+              <div class="mt-12 text-center">
+                <a
+                  href="#"
+                  title=""
+                  class="flex items-center justify-center w-full px-4 py-3 text-base font-bold rounded-2xl text-beige transition-all duration-200 bg-lred border border-transparent lg:px-8 hover:bg-black hover:text-beige focus:text-white focus:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
+                  role="button"
+                >
+                  grow now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-10 bg-beige sm:py-16 lg:py-24">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 container">
+        <div class="text-center">
+          <h2
+            class="text-3xl font-bold leading-tight text-lred sm:text-4xl lg:text-5xl"
+          >
+            book a <span class="text-black">free</span> <br />
+            strategy call<span class="text-black">.</span>
+          </h2>
+
+          <div
+            class="flex flex-col items-center justify-center px-16 mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row lg:mt-12 sm:px-0"
+          >
+            <a
+              href="#"
+              title=""
+              class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-beige transition-all duration-200 bg-black border-none rounded-md sm:w-auto hover:bg-lred focus:bg-lred focus:shadow-lg"
+              role="button"
+            >
+              book now
+            </a>
+
+            <a
+              href="#"
+              title=""
+              class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-black transition-all duration-200 bg-transparent ring-inset ring-2 ring-black rounded-md sm:w-auto hover:bg-black hover:text-white focus:bg-black focus:text-white"
+              role="button"
+            >
+              services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="py-12 bg-black sm:pt-16 lg:pt-20">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 container">
+        <div
+          class="flex flex-wrap items-start md:justify-between gap-y-12 gap-x-24 md:gap-x-12"
+        >
+          <div class="w-full lg:w-64 xl:w-full xl:max-w-xs">
+            <a href="#" title="" class="flex">
+              <img
+                class="w-3/6 h-auto"
+                src="images/LM Logo Dark.svg"
+                alt="Lumaza Marketin Logo"
+              />
+            </a>
+
+            <p class="mt-8 text-base font-normal text-gray-400">
+              Lumaza prides itself in finding potential customers and then
+              taking them on their path from customer to fan!
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-lred uppercase"
+            >
+              Company
+            </p>
+
+            <ul class="mt-8 space-y-5">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Features
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Works
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Career
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-lred uppercase"
+            >
+              Help
+            </p>
+
+            <ul class="mt-8 space-y-5">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Customer Support
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Delivery Details
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full md:max-w-xs">
+            <p
+              class="text-xs font-semibold tracking-widest text-gray-400 uppercase"
+            >
+              Newsletter
+            </p>
+
+            <form action="#" method="POST" class="mt-5 space-y-4">
+              <div>
+                <label for="email" class="sr-only"> Email address </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  class="block w-full px-4 py-4 text-base text-gray-900 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center w-full px-6 py-4 text-base font-medium text-beige transition-all duration-200 bg-lred rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-lred focus:bg-beige focus:shadow-lred focus:shadow-lg"
+              >
+                Subscribe Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="pt-12 mt-12 text-center border-t border-beige sm:mt-10 lg:mt-16"
+        >
+          <p class="text-sm font-normal text-white">
+            © Copyright 2022 Lumaza Marketing, All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
