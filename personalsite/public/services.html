@@ -8,70 +8,109 @@
     <title>Home | Lumaza Marketing</title>
   </head>
   <body>
-    <div class="bg-black h-screen">
-      <header class="py-4 bg-black" x-data="{expanded: false}">
-        <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-          <div class="flex items-center justify-between">
-            <div class="flex-shrink-0">
-              <a href="#" title="" class="flex">
-                <img
-                  class="w-auto h-20"
-                  src="images/LM Logo Dark.svg"
-                  alt="Lumaza Marketing Logo"
-                />
-              </a>
-            </div>
+    <header class="py-4 bg-black" x-data="{expanded: false}">
+      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex-shrink-0">
+            <a href="#" title="" class="flex">
+              <img
+                class="w-auto h-20"
+                src="images/LM Logo Dark.svg"
+                alt="Lumaza Marketing Logo"
+              />
+            </a>
+          </div>
 
-            <div class="flex lg:hidden">
-              <button
-                type="button"
-                class="text-lred"
-                @click="expanded = !expanded"
-                :aria-expanded="expanded"
-              >
-                <span x-show="!expanded" aria-hidden="true">
-                  <svg
-                    class="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1.5"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                </span>
-
-                <span x-show="expanded" aria-hidden="true">
-                  <svg
-                    class="w-7 h-7"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                </span>
-              </button>
-            </div>
-
-            <nav
-              class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-16"
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="text-lred"
+              @click="expanded = !expanded"
+              :aria-expanded="expanded"
             >
+              <span x-show="!expanded" aria-hidden="true">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </span>
+
+              <span x-show="expanded" aria-hidden="true">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <nav
+            class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-16"
+          >
+            <a
+              href="#"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              services
+            </a>
+
+            <a
+              href="#"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              portfolio
+            </a>
+
+            <a
+              href="#"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              our story
+            </a>
+          </nav>
+
+          <nav class="hidden lg:flex">
+            <a
+              href="#"
+              title=""
+              class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button"
+            >
+              start now
+            </a>
+          </nav>
+        </div>
+
+        <nav x-show="expanded" x-collapse class="hidden">
+          <div class="px-1 py-8">
+            <div class="grid gap-y-7">
               <a
-                href="services.html"
+                href="#"
                 title=""
-                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 services
               </a>
@@ -79,7 +118,7 @@
               <a
                 href="#"
                 title=""
-                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 portfolio
               </a>
@@ -87,133 +126,26 @@
               <a
                 href="#"
                 title=""
-                class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
               >
                 our story
               </a>
-            </nav>
 
-            <nav class="hidden lg:flex">
               <a
                 href="#"
                 title=""
-                class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-beige focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
                 start now
               </a>
-            </nav>
-          </div>
-
-          <nav x-show="expanded" x-collapse class="hidden">
-            <div class="px-1 py-8">
-              <div class="grid gap-y-7">
-                <a
-                  href="#"
-                  title=""
-                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  services
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  portfolio
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
-                >
-                  our story
-                </a>
-
-                <a
-                  href="#"
-                  title=""
-                  class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-beige focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-                  role="button"
-                >
-                  start now
-                </a>
-              </div>
             </div>
-          </nav>
-        </div>
-      </header>
-
-      <!-- HERO SECTION -->
-
-      <section
-        class="container px-4 py-20 mx-auto sm:px-6 lg:px-8 lg:py-48 xl:py-64 h-full"
-      >
-        <div class="">
-          <h1
-            class="text-lred text-5xl md:text-6xl lg:text-7xl font-extrabold text-center"
-          >
-            be bold<span class="text-white">.</span><br />be different<span
-              class="text-white"
-              >.</span
-            ><br /><span class="text-white">be you</span>.
-          </h1>
-          <div class="pt-10 flex justify-center items-center gap-4">
-            <a
-              class="inline-block items-center justify-center px-10 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
-              href="#"
-              >start now</a
-            >
-            <a
-              class="inline-block items-center justify-center px-10 py-2 text-base font-bold leading-7 text-beige transition-all duration-200 ring-lred ring-2 border border-transparent rounded-xl hover:bg-beige hover:text-lred hover:ring-0 focus:ring-0 focus:bg-beige"
-              href="testimonial.html"
-              >our work</a
-            >
           </div>
-        </div>
-      </section>
-      <!-- End of Nav/Hero Container -->
-    </div>
-
-    <!-- SECTION 2 -->
-
-    <section class="bg-beige">
-      <div
-        class="px-4 sm:px-6 md:px-8 max-w-5xl mx-auto py-20 md:flex md:justify-around md:gap-14"
-      >
-        <main class="">
-          <h2 class="text-5xl font-bold">
-            dream, create <br />
-            and smash <br />
-            <span class="text-lred">your goals</span>.
-          </h2>
-        </main>
-        <div class="pt-10 lg:pt-20">
-          <img
-            class="ml-auto"
-            src="images/Image of bro.png"
-            height="300px"
-            width="auto"
-          />
-        </div>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- BANNER SECTION -->
-
-    <section class="bg-lred py-10 md:py-16 lg:py-20">
-      <div class="container px-4 md:px-6 lg:px-8 mx-auto">
-        <h2
-          class="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white"
-        >
-          there's no time like<span class="text-black"> now</span>.
-        </h2>
-      </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
+    <!-- SERVICES TABLE -->
 
     <section class="py-12 bg-black sm:py-16 lg:py-20">
       <div class="px-4 mx-auto container sm:px-6 lg:px-8">
@@ -595,7 +527,7 @@
       </div>
     </section>
 
-    <!-- FOOTER SECTION -->
+    <!-- CTA SECTION -->
 
     <section class="py-10 bg-beige sm:py-16 lg:py-24">
       <div class="px-4 mx-auto sm:px-6 lg:px-8 container">
@@ -603,9 +535,13 @@
           <h2
             class="text-3xl font-bold leading-tight text-lred sm:text-4xl lg:text-5xl"
           >
-            book a <span class="text-black">free</span> <br />
-            strategy call<span class="text-black">.</span>
+            still not <span class="text-black">convinced</span>?
           </h2>
+
+          <p class="text-black font-semibold pt-10 text-base">
+            Book a FREE strategy call so we can take away any uncertainty, oh
+            did I mention that it's <span class="text-lred">FREE</span>?
+          </p>
 
           <div
             class="flex flex-col items-center justify-center px-16 mt-8 space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row lg:mt-12 sm:px-0"
@@ -613,7 +549,7 @@
             <a
               href="#"
               title=""
-              class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-beige transition-all duration-200 bg-black border-none rounded-2xl sm:w-auto hover:bg-lred focus:bg-lred focus:shadow-lg"
+              class="inline-flex items-center justify-center w-full px-10 py-3 text-base font-semibold text-beige transition-all duration-200 bg-black border-none rounded-2xl sm:w-auto hover:bg-lred focus:bg-lred focus:shadow-lg"
               role="button"
             >
               book now
@@ -622,7 +558,7 @@
             <a
               href="#"
               title=""
-              class="inline-flex items-center justify-center w-full px-8 py-3 text-base font-semibold text-black transition-all duration-200 bg-transparent ring-inset ring-2 ring-black rounded-2xl sm:w-auto hover:bg-black hover:text-white focus:bg-black focus:text-white"
+              class="inline-flex items-center justify-center w-full px-10 py-3 text-base font-semibold text-black transition-all duration-200 bg-transparent ring-inset ring-2 ring-black rounded-2xl sm:w-auto hover:bg-black hover:text-white focus:bg-black focus:text-white"
               role="button"
             >
               services
@@ -631,6 +567,8 @@
         </div>
       </div>
     </section>
+
+    <!-- FOOTER SECTION -->
 
     <!-- FOOTER -->
 
