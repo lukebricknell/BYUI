@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Lumaza Marketing</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="py-4 bg-black" x-data="{expanded: false}">
+      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <div class="flex-shrink-0">
+            <a href="#" title="" class="flex">
+              <img
+                class="w-auto h-20"
+                src="images/LM Logo Dark.svg"
+                alt="Lumaza Marketing Logo"
+              />
+            </a>
+          </div>
+
+          <div class="flex lg:hidden">
+            <button
+              type="button"
+              class="text-lred"
+              @click="expanded = !expanded"
+              :aria-expanded="expanded"
+            >
+              <span x-show="!expanded" aria-hidden="true">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </span>
+
+              <span x-show="expanded" aria-hidden="true">
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <nav
+            class="hidden lg:flex lg:items-center lg:justify-center lg:space-x-16"
+          >
+            <a
+              href="services.html"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              services
+            </a>
+
+            <a
+              href="#"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              portfolio
+            </a>
+
+            <a
+              href="#"
+              title=""
+              class="text-base font-semibold text-white transition-all duration-200 rounded focus:outline-none hover:text-beige focus:ring-1 focus:ring-white focus:ring-offset-2"
+            >
+              our story
+            </a>
+          </nav>
+
+          <nav class="hidden lg:flex">
+            <a
+              href="#"
+              title=""
+              class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-lred border border-transparent rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+              role="button"
+            >
+              start now
+            </a>
+          </nav>
+        </div>
+
+        <nav x-show="expanded" x-collapse class="hidden">
+          <div class="px-1 py-8">
+            <div class="grid gap-y-7">
+              <a
+                href="#"
+                title=""
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+              >
+                services
+              </a>
+
+              <a
+                href="#"
+                title=""
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+              >
+                portfolio
+              </a>
+
+              <a
+                href="#"
+                title=""
+                class="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"
+              >
+                our story
+              </a>
+
+              <a
+                href="#"
+                title=""
+                class="inline-flex items-center justify-center px-6 py-2 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-beige focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                role="button"
+              >
+                start now
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+
+    <section class="py-12 bg-black sm:py-16 lg:py-20">
+      <div class="px-4 mx-auto container sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl text-center font-bold text-white pb-24"
+        >
+          clients and their<span class="text-lred"> plans</span>.
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-3 gap-4">
+          <div class="w-full text-center p-3 bg-white col-span-1 row-span-2">
+            <img src="images/logo-1.png" class="h-30 w-auto mx-auto pt-8" />
+            <a
+              href="#"
+              class="inline-block py-2 px-6 bg-black text-lred rounded-xl mt-4 font-bold hover:bg-lred hover:text-black focus:bg-lred focus:text-black"
+              >basic plan</a
+            >
+          </div>
+          <div
+            class="w-full text-center p-3 bg-white col-span-2 flex items-center justify-evenly"
+          >
+            <img src="images/logo-2.png" class="h-30 w-auto" />
+            <a
+              href="#"
+              class="inline-block py-2 px-6 bg-black text-lred rounded-xl font-bold hover:bg-lred hover:text-black focus:bg-lred focus:text-black"
+              >growth plan</a
+            >
+          </div>
+          <div
+            class="w-full text-center p-3 bg-white col-span-1 row-span-2 col-start-2"
+          >
+            <img src="images/logo-3.png" class="h-30 w-auto mx-auto pt-8" />
+            <a
+              href="#"
+              class="inline-block py-2 px-6 bg-black text-lred rounded-xl font-bold hover:bg-lred hover:text-black focus:bg-lred focus:text-black mt-5"
+              >extreme disruption</a
+            >
+          </div>
+          <div
+            class="w-full text-center p-3 bg-white col-start-3 col-span-2 row-span-2"
+          >
+            <img src="images/logo-4.jpeg" class="h-24 w-auto mx-auto mt-12" />
+            <a
+              href="#"
+              class="inline-block py-2 px-6 bg-black text-lred rounded-xl font-bold hover:bg-lred hover:text-black focus:bg-lred focus:text-black mt-5"
+              >basic plan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO CLOUD -->
+
+    <section
+      class="relative py-12 overflow-hidden bg-black sm:py-16 lg:py-20 xl:py-24"
+    >
+      <div
+        class="absolute transform -translate-x-1/2 translate-y-full bottom-2/3 left-1/2"
+      >
+        <svg
+          class="opacity-30 blur-3xl filter"
+          style="filter: blur(64px)"
+          width="643"
+          height="408"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M183.151 216.787C86.498 123.868-62.309 137.493 30.03 41.445c92.337-96.049 494.126-6.876 590.779 86.043 96.652 92.919-148.432 154.396-240.769 250.445-92.338 96.048-100.237-68.228-196.889-161.146Z"
+            fill="url(#b)"
+          />
+          <defs>
+            <linearGradient
+              id="b"
+              x1="663.766"
+              y1="168.785"
+              x2="303.65"
+              y2="469.667"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0%" style="stop-color: var(--color-cyan-500)" />
+              <stop offset="100%" style="stop-color: var(--color-purple-500)" />
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="absolute inset-0">
+        <img
+          class="object-cover w-full h-full opacity-50"
+          src="https://landingfoliocom.imgix.net/store/collection/dusk/images/noise.png"
+          alt=""
+        />
+      </div>
+
+      <div class="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold text-lred">
+            just a few of our <span class="text-white">clients</span>.
+          </h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto mt-8 sm:mt-12">
+          <div
+            class="flex flex-wrap items-center justify-center gap-8 md:gap-x-16 md:gap-y-12"
+          >
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-waverio.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-logoipsum.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-alterbone.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-tinygone.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-preso.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-ridoria.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-carbonia.svg"
+              alt=""
+            />
+            <img
+              class="object-contain w-20 max-w-full sm:h-8 md:h-10 sm:w-44"
+              src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/1/logo-incanto.svg"
+              alt=""
+            />
+          </div>
+
+          <div class="max-w-md mx-auto mt-12 lg:mt-20 sm:mt-16">
+            <hr class="border-white opacity-10" />
+
+            <div
+              class="flex items-start justify-center mt-8 gap-x-10 sm:gap-x-14"
+            >
+              <img
+                class="object-contain w-auto h-8"
+                src="https://landingfoliocom.imgix.net/store/collection/dusk/images/cloud-logos/4/logo-capterra.svg"
+                alt=""
+              />
+              <div>
+                <div class="flex">
+                  <svg
+                    class="w-8 h-8 text-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-8 h-8 text-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-8 h-8 text-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-8 h-8 text-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                  <svg
+                    class="w-8 h-8 text-blue-400"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
+                  </svg>
+                </div>
+
+                <p class="mt-1 text-base font-normal text-gray-50">
+                  4.4/5 <span class="ml-1 text-gray-400">(14,590 Reviews)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="py-12 bg-black sm:pt-16 lg:pt-20">
+      <div class="px-4 mx-auto sm:px-6 lg:px-8 container">
+        <div
+          class="flex flex-wrap items-start md:justify-between gap-y-12 gap-x-24 md:gap-x-12"
+        >
+          <div class="w-full lg:w-64 xl:w-full xl:max-w-xs">
+            <a href="#" title="" class="flex">
+              <img
+                class="w-3/6 h-auto"
+                src="images/LM Logo Dark.svg"
+                alt="Lumaza Marketin Logo"
+              />
+            </a>
+
+            <p class="mt-8 text-base font-normal text-gray-400">
+              Lumaza prides itself in finding potential customers and then
+              taking them on their path from customer to fan!
+            </p>
+          </div>
+
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-lred uppercase"
+            >
+              Company
+            </p>
+
+            <ul class="mt-8 space-y-5">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  About
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Features
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Works
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Career
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p
+              class="text-xs font-semibold tracking-widest text-lred uppercase"
+            >
+              Help
+            </p>
+
+            <ul class="mt-8 space-y-5">
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Customer Support
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Delivery Details
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Terms & Conditions
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  title=""
+                  class="inline-flex text-base font-medium text-beige transition-all duration-200 hover:translate-x-1 hover:text-white"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="w-full md:max-w-xs">
+            <p
+              class="text-xs font-semibold tracking-widest text-gray-400 uppercase"
+            >
+              Newsletter
+            </p>
+
+            <form action="#" method="POST" class="mt-5 space-y-4">
+              <div>
+                <label for="email" class="sr-only"> Email address </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  class="block w-full px-4 py-4 text-base text-gray-900 border border-gray-200 rounded-xl bg-gray-50 focus:bg-white focus:outline-none focus:border-white focus:ring-1 focus:ring-white"
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center w-full px-6 py-4 text-base font-medium text-beige transition-all duration-200 bg-lred rounded-xl hover:bg-beige hover:text-lred focus:outline-none focus:ring-lred focus:bg-beige focus:shadow-lred focus:shadow-lg"
+              >
+                Subscribe Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="pt-12 mt-12 text-center border-t border-beige sm:mt-10 lg:mt-16"
+        >
+          <p class="text-sm font-normal text-white">
+            © Copyright 2022 Lumaza Marketing, All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
